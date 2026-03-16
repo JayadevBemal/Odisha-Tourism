@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import destinations from '../destinations'
-import DestinationCard from './DestinationCard.jsx'
+import destinations from '../data/destinations'
+import DestinationCard from '../components/DestinationCard'
 
 const Home = () => {
   const featured = destinations.filter(d => d.featured === true)
@@ -25,17 +25,23 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Featured Destinations */}
+      {/* Featured Destinations Section */}
       <div className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-center text-green-800 mb-2">Featured Destinations</h2>
-        <p className="text-center text-gray-500 mb-10">Hand picked places you must visit in Odisha</p>
+        <h2 className="text-3xl font-bold text-center text-green-800 mb-2">
+          Featured Destinations
+        </h2>
+        <p className="text-center text-gray-500 mb-10">
+          Hand picked places you must visit in Odisha
+        </p>
 
+        {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {featured.map(destination => (
             <DestinationCard key={destination.id} destination={destination} />
           ))}
         </div>
 
+        {/* View All Button */}
         <div className="text-center mt-12">
           <Link
             to="/destinations"
@@ -44,6 +50,7 @@ const Home = () => {
             View All Destinations
           </Link>
         </div>
+
       </div>
 
     </div>
