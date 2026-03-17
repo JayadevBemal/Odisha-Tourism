@@ -5,6 +5,8 @@ import Destinations from "./pages/Destinations.jsx";
 import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DestinationDetail from "./pages/DestinationDetail.jsx";
+import Favourites from "./pages/Favourites.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,7 +14,9 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Home/> },
-      {path: "/destinations", element: <Destinations/>}
+      {path: "/destinations", element: <Destinations/>},
+      {path: "/destinations/:id",element: <DestinationDetail/> },
+      {path: "/favourites",element:<Favourites/>}
     ],
   },
 ]);
