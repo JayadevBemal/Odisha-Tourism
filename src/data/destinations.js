@@ -1,3 +1,5 @@
+
+
 const destinations = [
   {
     id: 1,
@@ -28,7 +30,7 @@ const destinations = [
       "35 km from Puri, 65 km from Bhubaneswar by road. Regular buses and taxis available.",
     entryFee: "₹40 for Indians, ₹600 for foreigners",
     distanceFromBhubaneswar: "65 km",
-    image: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=800",
+    image: "/src/assets/konark.jpg",
     featured: true,
     nearbyPlaces: ["Puri Beach", "Chandrabhaga Beach", "ASI Museum Konark"],
   },
@@ -172,7 +174,7 @@ const destinations = [
       "60 km from Bhubaneswar by road or train. Well connected to all major cities.",
     entryFee: "Free (Non-Hindus not allowed inside)",
     distanceFromBhubaneswar: "60 km",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+    image: '/src/assets/puri.jpg',
     featured: true,
     nearbyPlaces: ["Puri Beach", "Konark Sun Temple", "Chilika Lake"],
   },

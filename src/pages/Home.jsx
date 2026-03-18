@@ -1,21 +1,43 @@
-import { Link } from 'react-router-dom'
-import destinations from '../data/destinations'
-import DestinationCard from '../components/DestinationCard'
+import { Link } from "react-router-dom";
+import destinations from "../data/destinations";
+import DestinationCard from "../components/DestinationCard";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-  const featured = destinations.filter(d => d.featured === true)
+  const featured = destinations.filter((d) => d.featured === true);
+  const [currIndex,setCurrIndex] = useState(0);
+
+  const heroImages = [
+  "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600", // mountains
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600", // beach
+  "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1600", // forest
+  "https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1600", // waterfall
+]
+
+
+useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrIndex((prev) => (prev + 1) % heroImages.length)
+  }, 3000)
+
+  return () => clearInterval(timer)
+}, [])
 
   return (
     <div>
-
       {/* Hero Section */}
       <div
-        className="h-screen bg-cover bg-center flex flex-col items-center justify-center text-white text-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600')" }}
+        className="h-screen  bg-center flex flex-col items-center justify-center text-white text-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600')",
+        }}
       >
         <div className="bg-black bg-opacity-50 p-10 rounded-xl">
           <h1 className="text-5xl font-bold mb-4">Explore Odisha</h1>
-          <p className="text-xl mb-8">Discover the soul of India — temples, beaches, wildlife and more</p>
+          <p className="text-xl mb-8">
+            Discover the soul of India — temples, beaches, wildlife and more
+          </p>
           <Link
             to="/destinations"
             className="bg-yellow-400 text-black font-bold px-8 py-3 rounded-full hover:bg-yellow-300 transition"
@@ -36,7 +58,7 @@ const Home = () => {
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featured.map(destination => (
+          {featured.map((destination) => (
             <DestinationCard key={destination.id} destination={destination} />
           ))}
         </div>
@@ -50,11 +72,10 @@ const Home = () => {
             View All Destinations
           </Link>
         </div>
-
+       
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
