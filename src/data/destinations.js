@@ -1,4 +1,18 @@
-
+import barehipani from '../assets/barehipani.jpg'
+import bhitarkanika from '../assets/bhitarkanika.jpg'
+import chandrabhaga from '../assets/chandrabhaga.jpg'
+import chilika from '../assets/chilika.jpg'
+import daringbadi from '../assets/daringbadi.jpg'
+import deomali from '../assets/deomali.jpg'
+import duduma from '../assets/duduma.jpg'
+import gopalpur from '../assets/gopalpur.jpg'
+import joranda from '../assets/joranda.jpg'
+import konark from '../assets/konark.jpg'
+import koraput from '../assets/koraput.jpg'
+import lingaraj from '../assets/lingaraj.jpg'
+import puri from '../assets/puri.jpg'
+import puriBeach from '../assets/puribeach.jpg'
+import similipal from '../assets/similipal.jpg'
 
 const destinations = [
   {
@@ -14,7 +28,7 @@ const destinations = [
     entryFee: "Free",
     distanceFromBhubaneswar: "60 km",
     image:
-      "/src/assets/puribeach.jpg",
+      puribeach,
     featured: true,
     nearbyPlaces: ["Jagannath Temple", "Chilika Lake", "Konark Sun Temple"],
   },
@@ -30,7 +44,7 @@ const destinations = [
       "35 km from Puri, 65 km from Bhubaneswar by road. Regular buses and taxis available.",
     entryFee: "₹40 for Indians, ₹600 for foreigners",
     distanceFromBhubaneswar: "65 km",
-    image: "/src/assets/konark.jpg",
+    image: konark,
     featured: true,
     nearbyPlaces: ["Puri Beach", "Chandrabhaga Beach", "ASI Museum Konark"],
   },
@@ -46,7 +60,7 @@ const destinations = [
       "50 km from Bhubaneswar by road. Nearest railway station is Balugaon.",
     entryFee: "Boat charges ₹100-500 per person",
     distanceFromBhubaneswar: "50 km",
-    image: "/src/assets/chilika.jpg",
+    image: chilika,
     featured: true,
     nearbyPlaces: ["Satapada", "Nalabana Island", "Kalijai Temple"],
   },
@@ -62,7 +76,7 @@ const destinations = [
       "320 km from Bhubaneswar. Nearest town is Baripada, well connected by road.",
     entryFee: "₹150 for Indians, ₹600 for foreigners",
     distanceFromBhubaneswar: "320 km",
-    image: "/src/assets/Similipal.jpg",
+    image: Similipal,
     featured: true,
     nearbyPlaces: ["Barehipani Waterfall", "Joranda Waterfall", "Jashipur"],
   },
@@ -78,7 +92,7 @@ const destinations = [
       "Inside Simlipal National Park, 20 km from Jashipur. Entry through forest department.",
     entryFee: "Included in Simlipal entry fee",
     distanceFromBhubaneswar: "340 km",
-    image: "/src/assets/barehipani.jpg",
+    image:barehipani,
     featured: false,
     nearbyPlaces: ["Joranda Waterfall", "Simlipal National Park", "Baripada"],
   },
@@ -94,7 +108,7 @@ const destinations = [
       "130 km from Bhubaneswar. Take road to Rajnagar, then boat into the park.",
     entryFee: "₹200 for Indians, ₹1000 for foreigners",
     distanceFromBhubaneswar: "130 km",
-    image: "/src/assets/bhitarkanika.jpg",
+    image: bhitarkanika,
     featured: true,
     nearbyPlaces: ["Gahirmatha Beach", "Kendrapara", "Rajnagar"],
   },
@@ -110,7 +124,7 @@ const destinations = [
       "300 km from Bhubaneswar. Regular buses from Phulbani and Bhubaneswar.",
     entryFee: "Free",
     distanceFromBhubaneswar: "300 km",
-    image: "src/assets/daringbadi.jpg",
+    image: daringbadi,
     featured: true,
     nearbyPlaces: ["Lover's Point", "Nature Park", "Hill View Point"],
   },
@@ -126,7 +140,7 @@ const destinations = [
       "Located in the heart of Bhubaneswar. Easily accessible by auto, cab or bus.",
     entryFee: "Free (Non-Hindus not allowed inside)",
     distanceFromBhubaneswar: "0 km",
-    image: "/src/assets/lingaraj.jpg",
+    image: lingaraj,
     featured: false,
     nearbyPlaces: ["Mukteswar Temple", "Bindu Sagar", "Odisha State Museum"],
   },
@@ -142,7 +156,7 @@ const destinations = [
       "180 km from Bhubaneswar. Nearest railway station is Berhampur, 15 km away.",
     entryFee: "Free",
     distanceFromBhubaneswar: "180 km",
-    image: "/src/assets/gopalpur.jpg",
+    image: gopalpur,
     featured: false,
     nearbyPlaces: ["Berhampur", "Chilika Lake", "Taptapani Hot Springs"],
   },
@@ -158,7 +172,7 @@ const destinations = [
       "100 km from Koraput. Jeep or cab required for the last stretch.",
     entryFee: "₹20 per person",
     distanceFromBhubaneswar: "480 km",
-    image: "/src/assets/duduma.jpg",
+    image: duduma,
     featured: false,
     nearbyPlaces: ["Koraput", "Jagdalpur", "Machkund Dam"],
   },
@@ -174,7 +188,7 @@ const destinations = [
       "60 km from Bhubaneswar by road or train. Well connected to all major cities.",
     entryFee: "Free (Non-Hindus not allowed inside)",
     distanceFromBhubaneswar: "60 km",
-    image: '/src/assets/puri.jpg',
+    image: puri,
     featured: true,
     nearbyPlaces: ["Puri Beach", "Konark Sun Temple", "Chilika Lake"],
   },
@@ -189,7 +203,7 @@ const destinations = [
     howToReach: "3 km from Konark Sun Temple, 68 km from Bhubaneswar.",
     entryFee: "Free",
     distanceFromBhubaneswar: "68 km",
-    image: "/src/assets/chandrabhaga.jpg",
+    image: chandrabhaga,
     featured: false,
     nearbyPlaces: ["Konark Sun Temple", "Puri Beach", "ASI Museum"],
   },
@@ -205,7 +219,7 @@ const destinations = [
       "420 km from Bhubaneswar. Direct trains from Bhubaneswar and Vizag.",
     entryFee: "Free",
     distanceFromBhubaneswar: "420 km",
-    image: "/src/assets/koraput.jpg",
+    image: koraput,
     featured: false,
     nearbyPlaces: ["Duduma Waterfall", "Deomali Peak", "Jagdalpur"],
   },
@@ -221,7 +235,7 @@ const destinations = [
       "Inside Simlipal National Park. Entry from Pithabata gate, 25 km from Baripada.",
     entryFee: "Included in Simlipal entry fee",
     distanceFromBhubaneswar: "330 km",
-    image: "/src/assets/joranda.jpg",
+    image: joranda,
     featured: false,
     nearbyPlaces: [
       "Barehipani Waterfall",
@@ -241,7 +255,7 @@ const destinations = [
       "40 km from Koraput town. Jeep or cab required. Local guide recommended.",
     entryFee: "Free",
     distanceFromBhubaneswar: "460 km",
-    image: "/src/assets/deomali.jpg",
+    image: deomali,
     featured: false,
     nearbyPlaces: ["Koraput", "Duduma Waterfall", "Tribal Markets"],
   },

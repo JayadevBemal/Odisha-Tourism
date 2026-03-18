@@ -1,7 +1,7 @@
 import destinations from "../data/destinations";
 import { useState } from "react";
 import DestinationCard from "../components/DestinationCard";
-import useFavourites from "../hooks/useFavourites";
+
 
 const Destinations = () => {
   const [search, setSearch] = useState("");
