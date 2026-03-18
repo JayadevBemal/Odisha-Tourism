@@ -27,8 +27,7 @@ const destinations = [
       "3 hours from Bhubaneswar by road. Direct trains available from major cities including Delhi, Mumbai and Kolkata.",
     entryFee: "Free",
     distanceFromBhubaneswar: "60 km",
-    image:
-      puribeach,
+    image: puriBeach,
     featured: true,
     nearbyPlaces: ["Jagannath Temple", "Chilika Lake", "Konark Sun Temple"],
   },
@@ -76,7 +75,7 @@ const destinations = [
       "320 km from Bhubaneswar. Nearest town is Baripada, well connected by road.",
     entryFee: "₹150 for Indians, ₹600 for foreigners",
     distanceFromBhubaneswar: "320 km",
-    image: Similipal,
+    image: similipal,
     featured: true,
     nearbyPlaces: ["Barehipani Waterfall", "Joranda Waterfall", "Jashipur"],
   },
