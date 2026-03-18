@@ -50,7 +50,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-green-700 text-center text-green-300 text-sm">
-        © 2025 Jayadev Bemal 
+        © 2026 Jayadev Bemal 
       </div>
 
     </footer>

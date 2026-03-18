@@ -1,16 +1,69 @@
-# React + Vite
+🌴 Odisha Tourism
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based tourism web app to explore the beauty of Odisha — beaches, temples, wildlife, waterfalls, and hill stations — all in one place.
 
-Currently, two official plugins are available:
+🔗 Live Demo: https://odisha-tourism-seven.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📂 GitHub: https://github.com/JayadevBemal/Odisha-Tourism
 
-## React Compiler
+✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🗺️ Explore 15+ destinations across Odisha
 
-## Expanding the ESLint configuration
+🔍 Real-time search by name or location
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🏷️ Category filtering (Beach, Temple, Wildlife, Waterfall, Hills)
+
+❤️ Favourites system with localStorage persistence
+
+📄 Detailed destination pages (best time, entry fee, how to reach, nearby places)
+
+📱 Fully responsive design (mobile, tablet, desktop)
+
+🛠️ Tech Stack
+
+React — UI development
+
+React Router DOM — Routing
+
+Tailwind CSS — Styling
+
+Vite — Fast build tool
+
+localStorage — Data persistence
+
+Vercel — Deployment
+
+📁 Project Structure
+src/
+├── components/       # Reusable UI components
+├── pages/            # App pages
+├── hooks/            # Custom hooks
+├── data/             # Static data
+└── assets/           # Images
+🚀 Getting Started
+git clone https://github.com/JayadevBemal/Odisha-Tourism.git
+cd Odisha-Tourism
+npm install
+npm run dev
+
+Open: http://localhost:5173
+
+💡 Key Highlights
+
+Custom Hook (useFavourites) for state + localStorage sync
+
+Dynamic routing (/destinations/:id)
+
+Reusable component architecture
+
+Efficient filtering using array methods
+
+👨‍💻 Author
+
+Jayadev Bemal
+GitHub: https://github.com/JayadevBemal
+
+📄 License
+
+MIT License

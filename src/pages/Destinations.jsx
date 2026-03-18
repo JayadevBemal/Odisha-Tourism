@@ -6,7 +6,7 @@ import DestinationCard from "../components/DestinationCard";
 const Destinations = () => {
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
-  
+
 
   const categories = [
     "All",
