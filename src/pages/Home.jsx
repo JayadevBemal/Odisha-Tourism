@@ -74,6 +74,31 @@ useEffect(() => {
         </div>
        
       </div>
+      {/* ── COMING SOON ── */}
+<div className="bg-green-800 text-white py-12 px-6 text-center">
+  <div className="max-w-2xl mx-auto">
+
+    <span className="bg-yellow-400 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+      Work in Progress
+    </span>
+
+    <h2 className="text-2xl font-bold mt-4 mb-3">
+      This is just the beginning 🚀
+    </h2>
+
+    <p className="text-green-200 text-sm leading-relaxed mb-6">
+      Odisha is a land of countless hidden gems — every district has its own 
+      stories, temples, nature spots and cultural treasures waiting to be 
+      discovered. This app is a growing collection that will keep expanding 
+      with more destinations, deeper guides and richer experiences over time.
+    </p>
+
+    <p className="text-green-300 text-xs italic">
+      — More destinations · More features · Always evolving
+    </p>
+
+  </div>
+</div>
     </div>
   );
 };
