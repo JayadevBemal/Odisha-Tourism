@@ -1,69 +1,124 @@
-🌴 Odisha Tourism
+# 🌴 Odisha Tourism
 
-A modern React-based tourism web app to explore the beauty of Odisha — beaches, temples, wildlife, waterfalls, and hill stations — all in one place.
+A responsive tourism web application built with React that helps users explore the beautiful destinations of Odisha — from pristine beaches and ancient temples to rich wildlife reserves and scenic hill stations.
 
-🔗 Live Demo: https://odisha-tourism-seven.vercel.app
+🔗 **Live Demo:** [odisha-tourism-seven.vercel.app](https://odisha-tourism-seven.vercel.app)  
+📂 **GitHub:** [github.com/JayadevBemal/Odisha-Tourism](https://github.com/JayadevBemal/Odisha-Tourism)
 
-📂 GitHub: https://github.com/JayadevBemal/Odisha-Tourism
+---
 
-✨ Features
+## 📸 Screenshots
 
-🗺️ Explore 15+ destinations across Odisha
+> Add screenshots of your app here
 
-🔍 Real-time search by name or location
+---
 
-🏷️ Category filtering (Beach, Temple, Wildlife, Waterfall, Hills)
+## ✨ Features
 
-❤️ Favourites system with localStorage persistence
+- 🗺️ **Multiple Destinations** — Beaches, Temples, Wildlife, Waterfalls and Hills across Odisha
+- 🔍 **Search** — Search destinations by name or location in real time
+- 🏷️ **Category Filter** — Filter destinations by Beach, Temple, Wildlife, Waterfall or Hills
+- ❤️ **Favourites System** — Save and remove favourite destinations, persisted using localStorage
+- 📄 **Destination Detail Page** — View detailed info including best time to visit, entry fee, how to reach and nearby places
+- 📱 **Fully Responsive** — Works seamlessly on mobile, tablet and desktop
 
-📄 Detailed destination pages (best time, entry fee, how to reach, nearby places)
+---
 
-📱 Fully responsive design (mobile, tablet, desktop)
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+| Technology | Usage |
+|---|---|
+| React | Frontend UI library |
+| React Router DOM | Client side routing and navigation |
+| Tailwind CSS | Utility first styling |
+| localStorage | Persisting favourites data |
+| Vite | Build tool and dev server |
+| Vercel | Deployment |
 
-React — UI development
+---
 
-React Router DOM — Routing
-
-Tailwind CSS — Styling
-
-Vite — Fast build tool
-
-localStorage — Data persistence
-
-Vercel — Deployment
-
-📁 Project Structure
+## 📁 Project Structure
+```
 src/
-├── components/       # Reusable UI components
-├── pages/            # App pages
-├── hooks/            # Custom hooks
-├── data/             # Static data
-└── assets/           # Images
-🚀 Getting Started
+├── assets/          # Destination images
+├── components/      # Reusable components
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   └── DestinationCard.jsx
+├── data/
+│   └── destinations.js   # All destination data
+├── hooks/
+│   └── useFavourites.js  # Custom hook for favourites logic
+├── pages/
+│   ├── Home.jsx
+│   ├── Destinations.jsx
+│   ├── DestinationDetail.jsx
+│   └── Favourites.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js installed on your machine
+- Git
+
+### Installation
+
+1. **Clone the repository**
+```bash
 git clone https://github.com/JayadevBemal/Odisha-Tourism.git
+```
+
+2. **Navigate to the project folder**
+```bash
 cd Odisha-Tourism
+```
+
+3. **Install dependencies**
+```bash
 npm install
+```
+
+4. **Start the development server**
+```bash
 npm run dev
+```
 
-Open: http://localhost:5173
+5. **Open in browser**
+```
+http://localhost:5173
+```
 
-💡 Key Highlights
+---
 
-Custom Hook (useFavourites) for state + localStorage sync
+## 🔑 Key Concepts Used
 
-Dynamic routing (/destinations/:id)
+- **Custom Hook** — `useFavourites` hook encapsulates all favourites logic including add, remove and localStorage sync
+- **React Router** — Nested routes with dynamic route parameters (`/destinations/:id`) for detail pages
+- **Component Based Architecture** — Reusable `DestinationCard` component used across Home and Destinations pages
+- **Controlled Components** — Search input and category filter managed with `useState`
+- **Array Methods** — `.filter()` and `.find()` used for search, filtering and data lookup
 
-Reusable component architecture
+---
 
-Efficient filtering using array methods
+## 🌱 Work in Progress
 
-👨‍💻 Author
+Odisha is a land of countless hidden gems — every district has its own stories, temples, nature spots and cultural treasures waiting to be discovered. This app is a growing collection that will keep expanding with more destinations, deeper guides and richer experiences over time.
 
-Jayadev Bemal
-GitHub: https://github.com/JayadevBemal
+*— More destinations · More features · Always evolving*
 
-📄 License
+---
 
-MIT License
+## 👨‍💻 Author
+
+**Jayadev Bemal**  
+📂 [GitHub](https://github.com/JayadevBemal)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
